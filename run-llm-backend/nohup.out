@@ -1,0 +1,183 @@
+Couldn't find '/home/codespace/.ollama/id_ed25519'. Generating new private key.
+Your new public key is: 
+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKK+bAqxWnB98mxlMTy58Byigk7tofd0QDh1ll/65tV8
+
+time=2024-04-08T07:11:29.315Z level=INFO source=images.go:804 msg="total blobs: 0"
+time=2024-04-08T07:11:29.316Z level=INFO source=images.go:811 msg="total unused blobs removed: 0"
+time=2024-04-08T07:11:29.319Z level=INFO source=routes.go:1118 msg="Listening on 127.0.0.1:11434 (version 0.1.30)"
+time=2024-04-08T07:11:29.320Z level=INFO source=payload_common.go:113 msg="Extracting dynamic libraries to /tmp/ollama2538497108/runners ..."
+time=2024-04-08T07:11:34.145Z level=INFO source=payload_common.go:140 msg="Dynamic LLM libraries [cpu_avx rocm_v60000 cpu_avx2 cpu cuda_v11]"
+time=2024-04-08T07:11:34.145Z level=INFO source=gpu.go:115 msg="Detecting GPU type"
+time=2024-04-08T07:11:34.146Z level=INFO source=gpu.go:265 msg="Searching for GPU management library libcudart.so*"
+time=2024-04-08T07:11:34.159Z level=INFO source=gpu.go:311 msg="Discovered GPU libraries: [/tmp/ollama2538497108/runners/cuda_v11/libcudart.so.11.0]"
+time=2024-04-08T07:11:34.160Z level=INFO source=gpu.go:340 msg="Unable to load cudart CUDA management library /tmp/ollama2538497108/runners/cuda_v11/libcudart.so.11.0: cudart init failure: 35"
+time=2024-04-08T07:11:34.161Z level=INFO source=gpu.go:265 msg="Searching for GPU management library libnvidia-ml.so"
+time=2024-04-08T07:11:34.166Z level=INFO source=gpu.go:311 msg="Discovered GPU libraries: []"
+time=2024-04-08T07:11:34.166Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-04-08T07:11:34.166Z level=INFO source=routes.go:1141 msg="no GPU detected"
+time=2024-04-08T07:17:33.040Z level=INFO source=images.go:804 msg="total blobs: 0"
+time=2024-04-08T07:17:33.040Z level=INFO source=images.go:811 msg="total unused blobs removed: 0"
+time=2024-04-08T07:17:33.041Z level=INFO source=routes.go:1118 msg="Listening on 127.0.0.1:11434 (version 0.1.30)"
+time=2024-04-08T07:17:33.041Z level=INFO source=payload_common.go:113 msg="Extracting dynamic libraries to /tmp/ollama4137426156/runners ..."
+time=2024-04-08T07:17:37.519Z level=INFO source=payload_common.go:140 msg="Dynamic LLM libraries [rocm_v60000 cpu cpu_avx cuda_v11 cpu_avx2]"
+time=2024-04-08T07:17:37.519Z level=INFO source=gpu.go:115 msg="Detecting GPU type"
+time=2024-04-08T07:17:37.519Z level=INFO source=gpu.go:265 msg="Searching for GPU management library libcudart.so*"
+time=2024-04-08T07:17:37.521Z level=INFO source=gpu.go:311 msg="Discovered GPU libraries: [/tmp/ollama4137426156/runners/cuda_v11/libcudart.so.11.0]"
+time=2024-04-08T07:17:37.522Z level=INFO source=gpu.go:340 msg="Unable to load cudart CUDA management library /tmp/ollama4137426156/runners/cuda_v11/libcudart.so.11.0: cudart init failure: 35"
+time=2024-04-08T07:17:37.522Z level=INFO source=gpu.go:265 msg="Searching for GPU management library libnvidia-ml.so"
+time=2024-04-08T07:17:37.524Z level=INFO source=gpu.go:311 msg="Discovered GPU libraries: []"
+time=2024-04-08T07:17:37.524Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-04-08T07:17:37.524Z level=INFO source=routes.go:1141 msg="no GPU detected"
+[GIN] 2024/04/08 - 07:24:10 | 200 |      40.546µs |       127.0.0.1 | HEAD     "/"
+time=2024-04-08T07:24:12.303Z level=INFO source=download.go:136 msg="downloading b73d1bc8e1cd in 16 100 MB part(s)"
+[GIN] 2024/04/08 - 07:24:12 | 200 |  2.245910789s |       127.0.0.1 | POST     "/api/pull"
+[GIN] 2024/04/08 - 07:27:23 | 200 |      28.814µs |       127.0.0.1 | HEAD     "/"
+time=2024-04-08T07:27:24.360Z level=INFO source=download.go:136 msg="downloading b73d1bc8e1cd in 16 100 MB part(s)"
+[GIN] 2024/04/08 - 07:27:25 | 200 |  1.211099993s |       127.0.0.1 | POST     "/api/pull"
+time=2024-04-08T07:31:11.698Z level=INFO source=images.go:804 msg="total blobs: 17"
+time=2024-04-08T07:31:11.699Z level=INFO source=images.go:811 msg="total unused blobs removed: 17"
+time=2024-04-08T07:31:11.699Z level=INFO source=routes.go:1118 msg="Listening on 127.0.0.1:11434 (version 0.1.30)"
+time=2024-04-08T07:31:11.700Z level=INFO source=payload_common.go:113 msg="Extracting dynamic libraries to /tmp/ollama58942991/runners ..."
+time=2024-04-08T07:31:16.841Z level=INFO source=payload_common.go:140 msg="Dynamic LLM libraries [cpu_avx rocm_v60000 cpu_avx2 cpu cuda_v11]"
+time=2024-04-08T07:31:16.841Z level=INFO source=gpu.go:115 msg="Detecting GPU type"
+time=2024-04-08T07:31:16.842Z level=INFO source=gpu.go:265 msg="Searching for GPU management library libcudart.so*"
+time=2024-04-08T07:31:16.844Z level=INFO source=gpu.go:311 msg="Discovered GPU libraries: [/tmp/ollama58942991/runners/cuda_v11/libcudart.so.11.0]"
+time=2024-04-08T07:31:16.844Z level=INFO source=gpu.go:340 msg="Unable to load cudart CUDA management library /tmp/ollama58942991/runners/cuda_v11/libcudart.so.11.0: cudart init failure: 35"
+time=2024-04-08T07:31:16.844Z level=INFO source=gpu.go:265 msg="Searching for GPU management library libnvidia-ml.so"
+time=2024-04-08T07:31:16.846Z level=INFO source=gpu.go:311 msg="Discovered GPU libraries: []"
+time=2024-04-08T07:31:16.846Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-04-08T07:31:16.846Z level=INFO source=routes.go:1141 msg="no GPU detected"
+[GIN] 2024/04/08 - 07:31:26 | 200 |      41.547µs |       127.0.0.1 | HEAD     "/"
+time=2024-04-08T07:31:28.062Z level=INFO source=download.go:136 msg="downloading b73d1bc8e1cd in 16 100 MB part(s)"
+time=2024-04-08T07:32:14.065Z level=INFO source=download.go:136 msg="downloading 097a36493f71 in 1 8.4 KB part(s)"
+time=2024-04-08T07:32:15.815Z level=INFO source=download.go:136 msg="downloading 109037bec39c in 1 136 B part(s)"
+time=2024-04-08T07:32:17.636Z level=INFO source=download.go:136 msg="downloading 65bb16cf5983 in 1 109 B part(s)"
+time=2024-04-08T07:32:19.344Z level=INFO source=download.go:136 msg="downloading 85261f011474 in 1 483 B part(s)"
+[GIN] 2024/04/08 - 07:32:24 | 200 | 57.490402031s |       127.0.0.1 | POST     "/api/pull"
+time=2024-04-08T07:33:36.173Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-04-08T07:33:36.173Z level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-04-08T07:33:36.173Z level=INFO source=llm.go:85 msg="GPU not available, falling back to CPU"
+time=2024-04-08T07:33:36.178Z level=INFO source=dyn_ext_server.go:87 msg="Loading Dynamic llm server: /tmp/ollama58942991/runners/cpu_avx2/libext_server.so"
+time=2024-04-08T07:33:36.178Z level=INFO source=dyn_ext_server.go:147 msg="Initializing llama server"
+llama_model_loader: loaded meta data with 24 key-value pairs and 164 tensors from /home/codespace/.ollama/models/blobs/sha256-b73d1bc8e1cd063d614bb1134d493cf56900f4a95fd5bc841849f4213e0fe529 (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = gemma
+llama_model_loader: - kv   1:                               general.name str              = gemma-1.1-2b-it
+llama_model_loader: - kv   2:                       gemma.context_length u32              = 8192
+llama_model_loader: - kv   3:                     gemma.embedding_length u32              = 2048
+llama_model_loader: - kv   4:                          gemma.block_count u32              = 18
+llama_model_loader: - kv   5:                  gemma.feed_forward_length u32              = 16384
+llama_model_loader: - kv   6:                 gemma.attention.head_count u32              = 8
+llama_model_loader: - kv   7:              gemma.attention.head_count_kv u32              = 1
+llama_model_loader: - kv   8:     gemma.attention.layer_norm_rms_epsilon f32              = 0.000001
+llama_model_loader: - kv   9:                 gemma.attention.key_length u32              = 256
+llama_model_loader: - kv  10:               gemma.attention.value_length u32              = 256
+llama_model_loader: - kv  11:                          general.file_type u32              = 2
+llama_model_loader: - kv  12:                       tokenizer.ggml.model str              = llama
+llama_model_loader: - kv  13:                      tokenizer.ggml.tokens arr[str,256000]  = ["<pad>", "<eos>", "<bos>", "<unk>", ...
+llama_model_loader: - kv  14:                      tokenizer.ggml.scores arr[f32,256000]  = [0.000000, 0.000000, 0.000000, 0.0000...
+llama_model_loader: - kv  15:                  tokenizer.ggml.token_type arr[i32,256000]  = [3, 3, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  16:                tokenizer.ggml.bos_token_id u32              = 2
+llama_model_loader: - kv  17:                tokenizer.ggml.eos_token_id u32              = 1
+llama_model_loader: - kv  18:            tokenizer.ggml.unknown_token_id u32              = 3
+llama_model_loader: - kv  19:            tokenizer.ggml.padding_token_id u32              = 0
+llama_model_loader: - kv  20:               tokenizer.ggml.add_bos_token bool             = true
+llama_model_loader: - kv  21:               tokenizer.ggml.add_eos_token bool             = false
+llama_model_loader: - kv  22:                    tokenizer.chat_template str              = {{ bos_token }}{% if messages[0]['rol...
+llama_model_loader: - kv  23:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:   37 tensors
+llama_model_loader: - type q4_0:  126 tensors
+llama_model_loader: - type q6_K:    1 tensors
+llm_load_vocab: mismatch in special tokens definition ( 416/256000 vs 260/256000 ).
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = gemma
+llm_load_print_meta: vocab type       = SPM
+llm_load_print_meta: n_vocab          = 256000
+llm_load_print_meta: n_merges         = 0
+llm_load_print_meta: n_ctx_train      = 8192
+llm_load_print_meta: n_embd           = 2048
+llm_load_print_meta: n_head           = 8
+llm_load_print_meta: n_head_kv        = 1
+llm_load_print_meta: n_layer          = 18
+llm_load_print_meta: n_rot            = 256
+llm_load_print_meta: n_embd_head_k    = 256
+llm_load_print_meta: n_embd_head_v    = 256
+llm_load_print_meta: n_gqa            = 8
+llm_load_print_meta: n_embd_k_gqa     = 256
+llm_load_print_meta: n_embd_v_gqa     = 256
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-06
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: f_logit_scale    = 0.0e+00
+llm_load_print_meta: n_ff             = 16384
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: causal attn      = 1
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 2
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 10000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_yarn_orig_ctx  = 8192
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: ssm_d_conv       = 0
+llm_load_print_meta: ssm_d_inner      = 0
+llm_load_print_meta: ssm_d_state      = 0
+llm_load_print_meta: ssm_dt_rank      = 0
+llm_load_print_meta: model type       = 2B
+llm_load_print_meta: model ftype      = Q4_0
+llm_load_print_meta: model params     = 2.51 B
+llm_load_print_meta: model size       = 1.44 GiB (4.93 BPW) 
+llm_load_print_meta: general.name     = gemma-1.1-2b-it
+llm_load_print_meta: BOS token        = 2 '<bos>'
+llm_load_print_meta: EOS token        = 1 '<eos>'
+llm_load_print_meta: UNK token        = 3 '<unk>'
+llm_load_print_meta: PAD token        = 0 '<pad>'
+llm_load_print_meta: LF token         = 227 '<0x0A>'
+llm_load_tensors: ggml ctx size =    0.06 MiB
+llm_load_tensors:        CPU buffer size =  1473.57 MiB
+...........................................................
+llama_new_context_with_model: n_ctx      = 2048
+llama_new_context_with_model: n_batch    = 512
+llama_new_context_with_model: n_ubatch   = 512
+llama_new_context_with_model: freq_base  = 10000.0
+llama_new_context_with_model: freq_scale = 1
+llama_kv_cache_init:        CPU KV buffer size =    36.00 MiB
+llama_new_context_with_model: KV self size  =   36.00 MiB, K (f16):   18.00 MiB, V (f16):   18.00 MiB
+llama_new_context_with_model:        CPU  output buffer size =   504.00 MiB
+llama_new_context_with_model:        CPU compute buffer size =   508.00 MiB
+llama_new_context_with_model: graph nodes  = 617
+llama_new_context_with_model: graph splits = 1
+loading library /tmp/ollama58942991/runners/cpu_avx2/libext_server.so
+{"function":"initialize","level":"INFO","line":444,"msg":"initializing slots","n_slots":1,"tid":"140450254022400","timestamp":1712561619}
+{"function":"initialize","level":"INFO","line":453,"msg":"new slot","n_ctx_slot":2048,"slot_id":0,"tid":"140450254022400","timestamp":1712561619}
+time=2024-04-08T07:33:39.372Z level=INFO source=dyn_ext_server.go:159 msg="Starting llama main loop"
+{"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":0,"tid":"140447318042368","timestamp":1712561619}
+{"function":"update_slots","ga_i":0,"level":"INFO","line":1803,"msg":"slot progression","n_past":0,"n_past_se":0,"n_prompt_tokens_processed":15,"slot_id":0,"task_id":0,"tid":"140447318042368","timestamp":1712561619}
+{"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":0,"slot_id":0,"task_id":0,"tid":"140447318042368","timestamp":1712561619}
+{"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =    2372.44 ms /    15 tokens (  158.16 ms per token,     6.32 tokens per second)","n_prompt_tokens_processed":15,"n_tokens_second":6.322609905927994,"slot_id":0,"t_prompt_processing":2372.438,"t_token":158.16253333333333,"task_id":0,"tid":"140447318042368","timestamp":1712561646}
+{"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =   24443.96 ms /   126 runs   (  194.00 ms per token,     5.15 tokens per second)","n_decoded":126,"n_tokens_second":5.154647399412886,"slot_id":0,"t_token":193.99969047619047,"t_token_generation":24443.961,"task_id":0,"tid":"140447318042368","timestamp":1712561646}
+{"function":"print_timings","level":"INFO","line":289,"msg":"          total time =   26816.40 ms","slot_id":0,"t_prompt_processing":2372.438,"t_token_generation":24443.961,"t_total":26816.398999999998,"task_id":0,"tid":"140447318042368","timestamp":1712561646}
+{"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":141,"n_ctx":2048,"n_past":140,"n_system_tokens":0,"slot_id":0,"task_id":0,"tid":"140447318042368","timestamp":1712561646,"truncated":false}
+{"function":"update_slots","level":"INFO","line":1572,"msg":"all slots are idle and system prompt is empty, clear the KV cache","tid":"140447318042368","timestamp":1712561646}
+[GIN] 2024/04/08 - 07:34:06 | 200 | 31.963749352s |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":129,"tid":"140447318042368","timestamp":1712561682}
+{"function":"update_slots","ga_i":0,"level":"INFO","line":1803,"msg":"slot progression","n_past":15,"n_past_se":0,"n_prompt_tokens_processed":0,"slot_id":0,"task_id":129,"tid":"140447318042368","timestamp":1712561682}
+{"function":"update_slots","level":"INFO","line":1818,"msg":"we have to evaluate at least 1 token to generate logits","slot_id":0,"task_id":129,"tid":"140447318042368","timestamp":1712561682}
+{"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":14,"slot_id":0,"task_id":129,"tid":"140447318042368","timestamp":1712561682}
+{"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =     166.60 ms /     0 tokens (     inf ms per token,     0.00 tokens per second)","n_prompt_tokens_processed":0,"n_tokens_second":0.0,"slot_id":0,"t_prompt_processing":166.6,"t_token":null,"task_id":129,"tid":"140447318042368","timestamp":1712561682}
+{"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =       0.02 ms /     1 runs   (    0.02 ms per token, 43478.26 tokens per second)","n_decoded":1,"n_tokens_second":43478.260869565216,"slot_id":0,"t_token":0.023,"t_token_generation":0.023,"task_id":129,"tid":"140447318042368","timestamp":1712561682}
+{"function":"print_timings","level":"INFO","line":289,"msg":"          total time =     166.62 ms","slot_id":0,"t_prompt_processing":166.6,"t_token_generation":0.023,"t_total":166.623,"task_id":129,"tid":"140447318042368","timestamp":1712561682}
+{"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":16,"n_ctx":2048,"n_past":15,"n_system_tokens":0,"slot_id":0,"task_id":129,"tid":"140447318042368","timestamp":1712561682,"truncated":false}
+[GIN] 2024/04/08 - 07:34:42 | 200 |  168.177775ms |       127.0.0.1 | POST     "/api/chat"
+{"function":"launch_slot_with_data","level":"INFO","line":826,"msg":"slot is processing task","slot_id":0,"task_id":133,"tid":"140447318042368","timestamp":1712561685}
+{"function":"update_slots","ga_i":0,"level":"INFO","line":1803,"msg":"slot progression","n_past":15,"n_past_se":0,"n_prompt_tokens_processed":0,"slot_id":0,"task_id":133,"tid":"140447318042368","timestamp":1712561685}
+{"function":"update_slots","level":"INFO","line":1818,"msg":"we have to evaluate at least 1 token to generate logits","slot_id":0,"task_id":133,"tid":"140447318042368","timestamp":1712561685}
+{"function":"update_slots","level":"INFO","line":1830,"msg":"kv cache rm [p0, end)","p0":14,"slot_id":0,"task_id":133,"tid":"140447318042368","timestamp":1712561685}
+{"function":"print_timings","level":"INFO","line":265,"msg":"prompt eval time     =     182.04 ms /     0 tokens (     inf ms per token,     0.00 tokens per second)","n_prompt_tokens_processed":0,"n_tokens_second":0.0,"slot_id":0,"t_prompt_processing":182.042,"t_token":null,"task_id":133,"tid":"140447318042368","timestamp":1712561685}
+{"function":"print_timings","level":"INFO","line":279,"msg":"generation eval time =       0.02 ms /     1 runs   (    0.02 ms per token, 47619.05 tokens per second)","n_decoded":1,"n_tokens_second":47619.04761904762,"slot_id":0,"t_token":0.021,"t_token_generation":0.021,"task_id":133,"tid":"140447318042368","timestamp":1712561685}
+{"function":"print_timings","level":"INFO","line":289,"msg":"          total time =     182.06 ms","slot_id":0,"t_prompt_processing":182.042,"t_token_generation":0.021,"t_total":182.063,"task_id":133,"tid":"140447318042368","timestamp":1712561685}
+{"function":"update_slots","level":"INFO","line":1634,"msg":"slot released","n_cache_tokens":16,"n_ctx":2048,"n_past":15,"n_system_tokens":0,"slot_id":0,"task_id":133,"tid":"140447318042368","timestamp":1712561685,"truncated":false}
+[GIN] 2024/04/08 - 07:34:45 | 200 |  183.900156ms |       127.0.0.1 | POST     "/api/chat"
