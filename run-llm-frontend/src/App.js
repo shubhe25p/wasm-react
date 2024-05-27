@@ -1,14 +1,19 @@
 import React from "react";
 import { LlamaCpp } from "./llama-mt/llama.js"
 import { Typography, Box, TextField, Button } from "@mui/material";
-let app;
+import {CreateMLCEngine} from "./webllm/index.js";
+const selectedModel = "Llama-3-8B-Instruct-q4f32_1";
+let app, engine;
 const App = () => {
   const [value, setValue] = React.useState("");
   const [prompt, setPrompt] = React.useState("1+2=?");
+  const [gpu, setGpu] = React.useState(false);
+  const [disableSubmit, setDisableSubmit] = React.useState(false);
   const numCores = window.navigator.hardwareConcurrency;
   const otherDetails = window.navigator.userAgent;
   let resp;
   const model = "https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/resolve/main/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf";
+
   
   const onModelLoaded = () => {
     app.run({
@@ -30,16 +35,52 @@ const App = () => {
   };
 
  
-  React.useEffect(() => {
-    app = new LlamaCpp(model, onModelLoaded, onMessageChunk, onComplete);
-    console.log(app);
+  React.useEffect(()=>{
+    async function loadModel() {
+    const canvas = document.createElement("canvas");
+    const gl = canvas.getContext("webgl");
+    if (!gl) {
+      console.error("WebGL not supported");
+      app = new LlamaCpp(model, onModelLoaded, onMessageChunk, onComplete);
+    } else {
+      setDisableSubmit(true);
+      console.log("WebGL supported");
+      setGpu(true);
+      engine = await CreateMLCEngine(selectedModel);
+      console.log("Model loaded on GPU");
+      setDisableSubmit(false);
+      // const reply = await engine.chat.completions.create({
+      //   messages: [{ role: "user", content: prompt }],
+      // });
+      // console.log(reply);
+    }
+  }
+  loadModel();
+
   },[]);
+  async function runModelonGPU() {
+    console.log(prompt);
+    console.log("Running on GPU");
+    const reply = await engine.chat.completions.create({
+      messages: [{ role: "user", content: prompt }],
+    });
+    console.log(reply);
+    setValue(reply.choices[0].message.content);
+    setDisableSubmit(false);
+  }
   const handleSubmit = (e) => {
     e.preventDefault();
+    setDisableSubmit(true);
     resp = "";
     setValue(resp);
+    if (gpu) {
+      runModelonGPU();
+    } else {
     onModelLoaded();
+    setDisableSubmit(false);
+    }
   }
+
   return (
     <Box
       sx={{
@@ -58,7 +99,20 @@ const App = () => {
       >
         Private LLM
       </Typography>
-      <Typography
+      {gpu ? (
+        <Typography
+          variant="h5"
+          align="center"
+          color="textSecondary"
+          paragraph
+          maxWidth={
+            "50%"
+          }
+        >
+          GPU Inference on {otherDetails}
+        </Typography>
+      ) : (
+        <Typography
         variant="h5"
         align="center"
         color="textSecondary"
@@ -69,6 +123,8 @@ const App = () => {
       >
         CPU Inference on {numCores} cores and {otherDetails}
       </Typography>
+      )}
+      
       <Box
       sx={{
         width: "50%",
@@ -91,6 +147,7 @@ const App = () => {
         sx={{
           marginLeft: "10px"
         }}
+        disabled={disableSubmit}
       >
         Submit
       </Button>
